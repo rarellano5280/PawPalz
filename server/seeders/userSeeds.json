@@ -1,52 +1,52 @@
 [
   {
-    "username": "Brian Kernighan",
-    "email": "bkernighan@techfriends.dev",
+    "username": "Brian the Basset Hound",
+    "email": "bkernighan@dogfriends.dev",
     "password": "password01"
   },
   {
-    "username": "Max Kanat-Alexander",
-    "email": "mkanatalexander@techfriends.dev",
+    "username": "Max the Maltese",
+    "email": "mkanatalexander@dogfriends.dev",
     "password": "password02"
   },
   {
-    "username": "Why The Lucky Stiff",
-    "email": "wtls@techfriends.dev",
+    "username": "Lucky the Labrador",
+    "email": "wtls@dogfriends.dev",
     "password": "password03"
   },
   {
-    "username": "Kent Beck",
-    "email": "kbeck@techfriends.dev",
+    "username": "Kent the King Charles Spaniel",
+    "email": "kbeck@dogfriends.dev",
     "password": "password04"
   },
   {
-    "username": "Edward V. Berard",
-    "email": "evberard@techfriends.dev",
+    "username": "Edward the English Crocker Spaniel",
+    "email": "evberard@dogfriends.dev",
     "password": "password05"
   },
   {
-    "username": "Alan Kay",
-    "email": "akay@techfriends.dev",
+    "username": "Alan the Alaskan Malamute",
+    "email": "akay@dogfriends.dev",
     "password": "password06"
   },
   {
-    "username": "C.A.R. Hoare",
-    "email": "choare@techfriends.dev",
+    "username": "Chico the Chihuahua",
+    "email": "choare@dogfriends.dev",
     "password": "password07"
   },
   {
-    "username": "David Thomas",
-    "email": "dthomas@techfriends.dev",
+    "username": "David the Dachshund",
+    "email": "dthomas@dogfriends.dev",
     "password": "password08"
   },
   {
-    "username": "Donald Knuth",
-    "email": "dknuth@techfriends.dev",
+    "username": "Don the Great Dane",
+    "email": "dknuth@dogfriends.dev",
     "password": "password09"
   },
   {
-    "username": "Lernantino",
-    "email": "lernantino@techfriends.dev",
+    "username": "Goldie the Golden Retriever",
+    "email": "lernantino@dogfriends.dev",
     "password": "password10"
   }
 ]

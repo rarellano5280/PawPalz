@@ -25,6 +25,11 @@ const typeDefs = gql`
     createdAt: String
   }
 
+  input InputFriend {
+    userId: String
+    username: String
+  }
+
   type Auth {
     token: ID!
     user: User
@@ -46,6 +51,8 @@ const typeDefs = gql`
     addComment(postId: ID!, commentText: String!): Post
     removePost(postId: ID!): Post
     removeComment(postId: ID!, commentId: ID!): Post
+    addFriend(newFriend: InputFriend!): User
+    removeFriend(userId: ID!): User
   }
 `;
 

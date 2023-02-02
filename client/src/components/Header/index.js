@@ -1,14 +1,28 @@
 import React from 'react';
+import { AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen,} from 'react-icons/ai';
+import { CgFileDocument, CgPhone } from "react-icons/cg";
+import logo from "../../assets/logo.png"
+import './header.css'
 
 const Header = () => {
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <h1 className="m-0">Tech Thoughts</h1>
-        <p className="m-0">Get into the mind of a programmer.</p>
+    <div className='paw__navbar'>
+      <div className='paw__navbar-links'>
+      <div className="paw__navbar-links_logo">
+          <img src={logo} />
+        </div>
+        <div class="paw__searchbar">
+          <input type="text" placeholder='Start typing your search..' />
+        </div>
+        <div className='pawNav'>
+          <AiOutlineHome style={{color: 'black', marginTop: "5px"}} /><p><a href='/home'>Home</a></p>
+          <AiOutlineUser style={{color: 'black', marginTop: "5px"}} /><p><a href='/palz'>Palz</a></p>
+          <AiOutlineFundProjectionScreen style={{color: 'black', marginTop: "5px"}} /><p><a href='/recommendations'>Recommendations</a></p>
+          <CgFileDocument style={{color: 'black', marginTop: "5px"}} /><p><a href='/account'>Account</a></p>
+        </div>
       </div>
-    </header>
-  );
-};
+    </div>
+  )
+}
 
-export default Header;
+export default Header

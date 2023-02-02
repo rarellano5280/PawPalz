@@ -1,0 +1,65 @@
+.paw__navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.paw__navbar-links {
+    flex: 1;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pawNav {
+    display: flex;
+    flex-direction: row;
+}
+
+.pawNav p{
+    color:#fff ;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 8rem 0 .3rem;
+    cursor: pointer;
+}
+
+.paw__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.paw__navbar-links_logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.paw__searchbar {
+    padding: 3rem;
+}
+
+input {
+    background-color: aliceblue;
+    text-align: center;
+    margin: 2px;
+    border: 10px;
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+}
+
+textarea {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2px;
+    border: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+}

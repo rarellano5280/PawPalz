@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/client';
 import ThoughtList from '../components/ThoughtList';
 import ThoughtForm from '../components/ThoughtForm';
 import UploadImage from '../components/UploadImage/UploadImage';
+import ImageDisplay from '../components/ImageDisplay/ImageDisplay';
 
 import { QUERY_THOUGHTS } from '../utils/queries';
 
@@ -27,6 +28,12 @@ const Home = () => {
           <UploadImage />
         </div>
         <div className="col-12 col-md-8 mb-3">
+        <div
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: '1px dotted #1a1a1a' }}
+        >
+          <ImageDisplay />
+        </div>
           {loading ? (
             <div>Loading...</div>
           ) : (

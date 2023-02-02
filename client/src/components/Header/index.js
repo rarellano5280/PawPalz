@@ -1,6 +1,7 @@
 import React from 'react';
-import { AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen,} from 'react-icons/ai';
-import { CgFileDocument, CgPhone } from "react-icons/cg";
+import { AiOutlineHome, AiOutlineHeart} from 'react-icons/ai';
+import { ImMap2 } from "react-icons/im";
+import { GrUserSettings } from "react-icons/gr";
 import logo from "../../assets/logo.png"
 import './header.css'
 
@@ -11,14 +12,49 @@ const Header = () => {
       <div className="paw__navbar-links_logo">
           <img src={logo} />
         </div>
+        <h3 class='paw__title'>Paw Palz</h3>
         <div class="paw__searchbar">
           <input type="text" placeholder='Start typing your search..' />
         </div>
         <div className='pawNav'>
-          <AiOutlineHome style={{color: 'black', marginTop: "5px"}} /><p><a href='/home'>Home</a></p>
-          <AiOutlineUser style={{color: 'black', marginTop: "5px"}} /><p><a href='/palz'>Palz</a></p>
-          <AiOutlineFundProjectionScreen style={{color: 'black', marginTop: "5px"}} /><p><a href='/recommendations'>Recommendations</a></p>
-          <CgFileDocument style={{color: 'black', marginTop: "5px"}} /><p><a href='/account'>Account</a></p>
+        <li className='paw__navbar-link-icons'>
+              <a
+              href='https://github.com/rarellano5280'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < AiOutlineHome size={25}/>
+              </a>
+            </li>
+
+            <li className='paw__navbar-link-icons'>
+              <a
+              href='/palz'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < AiOutlineHeart size={25}/>
+              </a>
+            </li>
+
+            <li className='paw__navbar-link-icons'>
+              <a
+              href='/walks'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < ImMap2 size={25}/>
+              </a>
+            </li>
+            <li className='paw__navbar-link-icons'>
+              <a
+              href='/account'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < GrUserSettings size={25}/>
+              </a>
+            </li>
         </div>
       </div>
     </div>

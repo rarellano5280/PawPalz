@@ -1,0 +1,106 @@
+.paw__navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.paw__navbar-links {
+    flex: 1;   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.paw__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.paw__navbar-links_logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.paw__title {
+    font-family: 'Courier New', Courier, monospace; 
+    color: #0275d8
+}
+
+.paw__searchbar {
+    padding: 3rem;
+}
+
+input {
+    background-color: aliceblue;
+    text-align: center;
+    margin: 2px;
+    border: 10px;
+    border-radius: 25px;
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+}
+
+textarea {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2px;
+    border: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    font-size: 14px;
+}
+.pawNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paw__navbar-link-icons {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 2em;
+    background: #eee;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.paw__navbar-link-icons::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.paw__navbar-link-icons:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #0275d8;
+}
+
+.paw__navbar-link-icons:hover {
+    color: #0275d8;
+    box-shadow: 0 0 10px #0275d8;
+    text-shadow: aliceblue;
+}
+
+.icon-color {
+    color: black;
+}

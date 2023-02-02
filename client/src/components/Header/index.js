@@ -1,14 +1,64 @@
 import React from 'react';
+import { AiOutlineHome, AiOutlineHeart} from 'react-icons/ai';
+import { ImMap2 } from "react-icons/im";
+import { GrUserSettings } from "react-icons/gr";
+import logo from "../../assets/logo.png"
+import './header.css'
 
 const Header = () => {
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
-      <div className="container flex-row justify-space-between-lg justify-center align-center">
-        <h1 className="m-0">Tech Thoughts</h1>
-        <p className="m-0">Get into the mind of a programmer.</p>
-      </div>
-    </header>
-  );
-};
+    <div className='paw__navbar'>
+      <div className='paw__navbar-links'>
+      <div className="paw__navbar-links_logo">
+          <img src={logo} />
+        </div>
+        <h3 class='paw__title'>Paw Palz</h3>
+        <div class="paw__searchbar">
+          <input type="text" placeholder='Start typing your search..' />
+        </div>
+        <div className='pawNav'>
+        <li className='paw__navbar-link-icons'>
+              <a
+              href='https://github.com/rarellano5280'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < AiOutlineHome size={25}/>
+              </a>
+            </li>
 
-export default Header;
+            <li className='paw__navbar-link-icons'>
+              <a
+              href='/palz'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < AiOutlineHeart size={25}/>
+              </a>
+            </li>
+
+            <li className='paw__navbar-link-icons'>
+              <a
+              href='/walks'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < ImMap2 size={25}/>
+              </a>
+            </li>
+            <li className='paw__navbar-link-icons'>
+              <a
+              href='/account'
+              target="_blank"
+              rel='noreferrer'
+              className='icon-color'>
+              < GrUserSettings size={25}/>
+              </a>
+            </li>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Header

@@ -29,7 +29,7 @@ const typeDefs = gql`
   input InputFriend {
     userId: String
     username: String
-    profilePic: String
+    image: String
   }
 
   type Auth {

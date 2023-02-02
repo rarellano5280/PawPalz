@@ -16,7 +16,7 @@ export const QUERY_USER = gql`
       friends {
         userId
         username
-        profilePic
+        image
       }
     }
   }
@@ -66,7 +66,7 @@ export const QUERY_ME = gql`
       friends {
         userId
         username
-        profilePic
+        image
       }
     }
   }

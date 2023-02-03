@@ -5,11 +5,11 @@ import ThoughtList from '../components/ThoughtList';
 import ThoughtForm from '../components/ThoughtForm';
 import UploadImage from '../components/UploadImage/UploadImage';
 
-import { QUERY_THOUGHTS } from '../utils/queries';
+import { QUERY_POSTS } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
-  const thoughts = data?.thoughts || [];
+  const { loading, data } = useQuery(QUERY_POSTS);
+  const thoughts = data?.posts || [];
 
   return (
     <main>

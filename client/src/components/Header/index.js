@@ -19,9 +19,7 @@ const Header = () => {
         <div className='pawNav'>
         <li className='paw__navbar-link-icons'>
               <a
-              href='https://github.com/rarellano5280'
-              target="_blank"
-              rel='noreferrer'
+              href='/'
               className='icon-color'>
               < AiOutlineHome size={25}/>
               </a>
@@ -30,8 +28,6 @@ const Header = () => {
             <li className='paw__navbar-link-icons'>
               <a
               href='/palz'
-              target="_blank"
-              rel='noreferrer'
               className='icon-color'>
               < AiOutlineHeart size={25}/>
               </a>
@@ -40,8 +36,6 @@ const Header = () => {
             <li className='paw__navbar-link-icons'>
               <a
               href='/walks'
-              target="_blank"
-              rel='noreferrer'
               className='icon-color'>
               < ImMap2 size={25}/>
               </a>
@@ -49,8 +43,6 @@ const Header = () => {
             <li className='paw__navbar-link-icons'>
               <a
               href='/account'
-              target="_blank"
-              rel='noreferrer'
               className='icon-color'>
               < GrUserSettings size={25}/>
               </a>

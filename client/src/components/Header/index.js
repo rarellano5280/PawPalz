@@ -7,14 +7,14 @@ import './header.css'
 
 const Header = () => {
   return (
-    <div className='paw__navbar'>
-      <div className='paw__navbar-links'>
-      <div className="paw__navbar-links_logo">
+    <div className="paw__navbar">
+      <div className="paw__navbar-links">
+        <div className="paw__navbar-links_logo">
           <img src={logo} />
         </div>
-        <h3 class='paw__title'>Paw Palz</h3>
+        <h3 class="paw__title">Paw Palz</h3>
         <div class="paw__searchbar">
-          <input type="text" placeholder='Start typing your search..' />
+          <input type="text" placeholder="Start typing your search.." />
         </div>
         <div className='pawNav'>
         <NavLink to="/" className='paw__navbar-link-icons'>{AiOutlineHome}</NavLink>
@@ -24,7 +24,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

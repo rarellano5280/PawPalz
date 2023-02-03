@@ -1,15 +1,15 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import ThoughtList from '../components/ThoughtList';
-import ThoughtForm from '../components/ThoughtForm';
+import PostList from '../components/PostList';
+import PostForm from '../components/PostForm';
 import UploadImage from '../components/UploadImage/UploadImage';
 
 import { QUERY_POSTS } from '../utils/queries';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_POSTS);
-  const thoughts = data?.posts || [];
+  const posts = data?.posts || [];
 
   return (
     <main>
@@ -18,7 +18,7 @@ const Home = () => {
           className="col-12 col-md-10 mb-3 p-3"
           style={{ border: '1px dotted #1a1a1a' }}
         >
-          <ThoughtForm />
+          <PostForm />
         </div>
         <div
           className="col-12 col-md-10 mb-3 p-3"
@@ -30,10 +30,7 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ThoughtList
-              thoughts={thoughts}
-              title="Some Feed for Thought(s)..."
-            />
+            <PostList posts={posts} title="Some Feed for Post(s)..." />
           )}
         </div>
       </div>

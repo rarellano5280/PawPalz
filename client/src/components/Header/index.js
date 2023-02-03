@@ -1,7 +1,7 @@
 import React from 'react';
-import { AiOutlineHome, AiOutlineHeart} from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
+import { AiOutlineHome, AiOutlineHeart, AiOutlineUser} from 'react-icons/ai';
 import { ImMap2 } from "react-icons/im";
-import { GrUserSettings } from "react-icons/gr";
 import logo from "../../assets/logo.png"
 import './header.css'
 
@@ -17,44 +17,10 @@ const Header = () => {
           <input type="text" placeholder='Start typing your search..' />
         </div>
         <div className='pawNav'>
-        <li className='paw__navbar-link-icons'>
-              <a
-              href='https://github.com/rarellano5280'
-              target="_blank"
-              rel='noreferrer'
-              className='icon-color'>
-              < AiOutlineHome size={25}/>
-              </a>
-            </li>
-
-            <li className='paw__navbar-link-icons'>
-              <a
-              href='/palz'
-              target="_blank"
-              rel='noreferrer'
-              className='icon-color'>
-              < AiOutlineHeart size={25}/>
-              </a>
-            </li>
-
-            <li className='paw__navbar-link-icons'>
-              <a
-              href='/walks'
-              target="_blank"
-              rel='noreferrer'
-              className='icon-color'>
-              < ImMap2 size={25}/>
-              </a>
-            </li>
-            <li className='paw__navbar-link-icons'>
-              <a
-              href='/account'
-              target="_blank"
-              rel='noreferrer'
-              className='icon-color'>
-              < GrUserSettings size={25}/>
-              </a>
-            </li>
+        <NavLink to="/" className='paw__navbar-link-icons'>{AiOutlineHome}</NavLink>
+        <NavLink to="/palz" className='paw__navbar-link-icons'>{AiOutlineHeart}</NavLink>
+        <NavLink to="/walks" className='paw__navbar-link-icons'>{ImMap2}</NavLink>
+        <NavLink to="/account" className='paw__navbar-link-icons'>{AiOutlineUser}</NavLink>
         </div>
       </div>
     </div>

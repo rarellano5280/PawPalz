@@ -5,6 +5,7 @@ import ThoughtList from '../components/ThoughtList';
 import ThoughtForm from '../components/ThoughtForm';
 import UploadImage from '../components/UploadImage/UploadImage';
 import ImageDisplay from '../components/ImageDisplay/ImageDisplay';
+import UploadWidget from '../components/UploadImage/UploadWidget';
 
 import { QUERY_THOUGHTS } from '../utils/queries';
 
@@ -25,7 +26,7 @@ const Home = () => {
           className="col-12 col-md-10 mb-3 p-3"
           style={{ border: '1px dotted #1a1a1a' }}
         >
-          <UploadImage />
+          <UploadWidget />
         </div>
         <div className="col-12 col-md-8 mb-3">
         <div

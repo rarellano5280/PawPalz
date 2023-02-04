@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function UploadImage() {
   const [loading, setLoading] = useState(false);
-  const [url, setUrl] = useState("");
+  const [url, setUrl] = useState({});
 
   const convertBase64 = (file) => {
     return new Promise((resolve, reject) => {
@@ -24,7 +24,7 @@ export default function UploadImage() {
   function uploadSingleImage(base64) {
     setLoading(true);
     axios
-      .post("http://localhost:5000/uploadImage", { image: base64 })
+      .post("https://api.cloudinary.com/v1_1/dzbxuwfvw/upload", { image: base64 })
       .then((res) => {
         setUrl(res.data);
         alert("Image uploaded Succesfully");
@@ -36,7 +36,7 @@ export default function UploadImage() {
   function uploadMultipleImages(images) {
     setLoading(true);
     axios
-      .post("http://localhost:5000/uploadMultipleImages", { images })
+      .post("https://api.cloudinary.com/v1_1/dzbxuwfvw/upload", { images })
       .then((res) => {
         setUrl(res.data);
         alert("Image uploaded Succesfully");

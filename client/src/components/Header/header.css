@@ -1,4 +1,5 @@
 .paw__navbar {
+    margin-bottom: 50px;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -24,8 +25,9 @@
 }
 
 .paw__title {
-    font-family: 'Courier New', Courier, monospace; 
-    color: #0275d8
+    font-family: var(--font-family);
+    color: var(--color-title);
+    font-size: 35px;
 }
 
 .paw__searchbar {

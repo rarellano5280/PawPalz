@@ -4,6 +4,7 @@ import { AiOutlineHome, AiOutlineUser,} from 'react-icons/ai';
 import { ImMap2 } from "react-icons/im";
 import { TbPaw } from "react-icons/tb";
 import logo from "../../assets/logo.png"
+
 import './header.css'
 
 const Header = () => {

@@ -8,6 +8,8 @@ import UploadImage from '../components/UploadImage/UploadImage';
 import { QUERY_POSTS } from '../utils/queries';
 
 import bg from "../assets/bg.jpeg"
+import profile from "../assets/profile.jpeg"
+import profilePic from "../assets/profile-pic.jpeg"
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_POSTS);
@@ -23,7 +25,7 @@ const Home = () => {
       </div>
     </div>
     <div className="paw__header-image">
-        <img src={bg} alt="avatar"/>
+        <img src={profilePic} alt="avatar"/>
         <p style={{ paddingBottom: 10}}>@Username</p>        
       </div>
   </div>

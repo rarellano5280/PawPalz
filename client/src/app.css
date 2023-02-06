@@ -80,11 +80,13 @@ a {
 }
 
 .paw__post-header {
+    font-family: var(--font-family);
     border-top-left-radius: 50px !important;
     border-top-right-radius: 50px !important;
 }
 
 .paw__post-content {
+    font-family: var(--font-family);
     background-color: aliceblue;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;

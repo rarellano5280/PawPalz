@@ -2,51 +2,61 @@
   {
     "username": "Brian the Basset Hound",
     "email": "bkernighan@dogfriends.dev",
-    "password": "password01"
+    "password": "password01",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Max the Maltese",
     "email": "mkanatalexander@dogfriends.dev",
-    "password": "password02"
+    "password": "password02",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Lucky the Labrador",
     "email": "wtls@dogfriends.dev",
-    "password": "password03"
+    "password": "password03",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Kent the King Charles Spaniel",
     "email": "kbeck@dogfriends.dev",
-    "password": "password04"
+    "password": "password04",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Edward the English Crocker Spaniel",
     "email": "evberard@dogfriends.dev",
-    "password": "password05"
+    "password": "password05",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Alan the Alaskan Malamute",
     "email": "akay@dogfriends.dev",
-    "password": "password06"
+    "password": "password06",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Chico the Chihuahua",
     "email": "choare@dogfriends.dev",
-    "password": "password07"
+    "password": "password07",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "David the Dachshund",
     "email": "dthomas@dogfriends.dev",
-    "password": "password08"
+    "password": "password08",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Oliver the Great Dane",
     "email": "oknuth@dogfriends.dev",
-    "password": "password09"
+    "password": "password09",
+    "image": "../../client/src/assets/pawDefault.png"
   },
   {
     "username": "Goldie the Golden Retriever",
     "email": "lernantino@dogfriends.dev",
-    "password": "password10"
+    "password": "password10",
+    "image": "../../client/src/assets/pawDefault.png"
   }
 ]

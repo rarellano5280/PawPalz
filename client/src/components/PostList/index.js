@@ -17,7 +17,7 @@ const PostList = ({ posts, title }) => {
                 had this post on {post.createdAt}
               </span>
             </h4>
-            <div className="">
+            <div className="text-center card-body card-rounded p-2">
               <p>{post.postText}</p>
             </div>
           </div>

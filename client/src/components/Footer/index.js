@@ -2,20 +2,12 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
+    <footer className="w-100 mt-auto gradient__text p-4">
       <div className="container text-center mb-5">
         <h4>
-          Made with{' '}
-          <span
-            className="emoji"
-            role="img"
-            aria-label="heart"
-            aria-hidden="false"
-          >
-            ❤️
-          </span>{' '}
-          by the PawPalz team.
+          Designed by the Paw Palz Team
         </h4>
+        <p>© 2023 All rights reserved</p>
       </div>
     </footer>
   );

@@ -105,3 +105,9 @@ a {
     border-radius: 200px;
     margin: 0 auto;
 }
+
+.paw__account {
+    background: var(--gradient-bar);
+    border-radius: 15px;
+    border: none !important;
+}

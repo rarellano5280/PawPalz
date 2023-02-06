@@ -48,7 +48,7 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <PostList posts={posts} title="Some Feed for Post(s)..." />
+            <PostList posts={posts} title="What are your Palz saying..." />
           )}
         </div>
       </div>

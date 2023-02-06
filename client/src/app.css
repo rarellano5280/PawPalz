@@ -73,6 +73,12 @@ a {
     border-radius: 50px !important;
 }
 
+.paw__post-list{
+    background: white;
+    border-radius: 50px !important;
+    padding: 2rem;
+}
+
 .paw__header-content {
     flex: 1;
     display: flex;

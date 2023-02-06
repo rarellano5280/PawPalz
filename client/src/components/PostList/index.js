@@ -11,13 +11,13 @@ const PostList = ({ posts, title }) => {
       {posts &&
         posts.map((post) => (
           <div key={post._id} className='card card-rounded paw__post-list section__padding'>
-            <h4 className="card-header card-rounded p-2 m-0">
+            <h4 className="paw__post-header card-header card-rounded p-2 m-0 text-white">
               {post.postAuthor} <br />
               <span style={{ fontSize: '1rem' }}>
                 had this post on {post.createdAt}
               </span>
             </h4>
-            <div className="text-center card-body card-rounded p-2">
+            <div className="paw__post-content text-center card-body card-rounded p-2">
               <p>{post.postText}</p>
             </div>
           </div>

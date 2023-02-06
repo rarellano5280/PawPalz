@@ -79,6 +79,17 @@ a {
     padding: 2rem;
 }
 
+.paw__post-header {
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
+}
+
+.paw__post-content {
+    background-color: aliceblue;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
 .paw__header-content {
     flex: 1;
     display: flex;

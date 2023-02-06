@@ -3,6 +3,7 @@ import { useMutation } from '@apollo/client';
 
 import { ADD_POST } from '../../utils/mutations';
 import { QUERY_POSTS } from '../../utils/queries';
+import './post.css'
 
 const PostForm = () => {
   const [formState, setFormState] = useState({
@@ -57,10 +58,10 @@ const PostForm = () => {
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3 className='gradient__text pl-4'>Create a Post</h3>
 
       <p
-        className={`m-0 ${
+        className={`m-3 ${
           characterCount === 280 || error ? 'text-danger' : ''
         }`}
       >
@@ -68,15 +69,15 @@ const PostForm = () => {
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
       <form
-        className="flex-row justify-center justify-space-between-md align-center"
+        className="flex-row justify-center justify-space-between-md align-center border"
         onSubmit={handleFormSubmit}
       >
         <div className="col-12">
           <textarea
             name="postText"
-            placeholder="Here's a new post..."
+            placeholder="What's on your mind?"
             value={formState.postText}
-            className="form-input w-100"
+            className="form-input text-left"
             style={{ lineHeight: '1.5' }}
             onChange={handleChange}
           ></textarea>
@@ -92,7 +93,7 @@ const PostForm = () => {
         </div>
 
         <div className="col-12 col-lg-3">
-          <button className="btn btn-primary btn-block py-3" type="submit">
+          <button className="paw__post-btn" type="submit">
             Add Post
           </button>
         </div>

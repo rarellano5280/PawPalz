@@ -81,7 +81,7 @@ const Home = () => {
         </>
       ) : (
         <>
-        <div className="card card-rounded paw__header section__paddin">
+        <div className="card card-rounded paw__landing-card section__paddin">
           <div className='paw__landing-content'>
           <h1
                 style={{ paddingBottom: 15, marginLeft: 50 }}
@@ -91,10 +91,9 @@ const Home = () => {
               </h1>
               <div />
               <p
-                style={{ paddingTop: 1, marginLeft: 50, marginRight: 50 }}
+                style={{ paddingTop: 1, marginLeft: 50, marginRight: 25 }}
                 className="paw__bio"
               >
-                Paw Palz is all about tail-wagging fun and pup-tastic connections! 
                 Our mission is to bring dog lovers together in a playful online space where tails never stop wagging and every good boy and girl is a star. 
                 We believe that every dog has a unique personality and story to share, and we're dedicated to providing a pawsome platform for sharing the joys of canine companionship. 
                 So grab your leash, grab your pup, and let's get ready to make some fur-ever friends!

@@ -65,12 +65,19 @@ a {
 
 .paw__header,
 .paw__post,
-.paw__upload {
+.paw__upload,
+.paw__landing-card {
     display: flex;
     padding: 2rem;
     background: white;
     border-style: hidden;
     border-radius: 50px !important;
+}
+
+.paw__landing-card {
+-webkit-box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+-moz-box-shadow: -1px 4px 20px 11px rgba(49,49,49,0.57);
+box-shadow: -1px 4px 15px 5px rgba(49,49,49,0.57);
 }
 
 .paw__post-list{

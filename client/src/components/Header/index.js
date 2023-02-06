@@ -14,7 +14,7 @@ const Header = () => {
         <div className="paw__navbar-links_logo">
           <img src={logo} />
         </div>
-        <h3 class="paw__title">Paw Palz</h3>
+        <h3 class="paw__title gradient__text">Paw Palz</h3>
         <div class="paw__searchbar">
           <input type="text" placeholder="Start typing your search.." />
         </div>

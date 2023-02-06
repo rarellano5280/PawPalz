@@ -898,6 +898,10 @@ a:hover {
   text-align: justify !important;
 }
 
+.text-left {
+  text-align: left !important;
+}
+
 .text-right {
   text-align: right !important;
 }
@@ -1104,13 +1108,13 @@ a:hover {
 }
 
 .card {
-  border: 1px solid #1a1a1a;
   margin-bottom: 1rem;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
+  text-align: center;
+  background-color: #489df1;
   color: #d9e9e8;
 }
 
@@ -1163,14 +1167,15 @@ form .form-label {
 }
 
 form .form-input {
+  text-align: center;
   width: 100%;
   padding: 0.75rem;
   color: #1a1a1a;
   background-color: #ffffff;
   margin: 0.625rem 0;
-  font-size: 1.2rem;
+  font-size: 14px;
   border: 1px solid #484848;
-  border-radius: 0.3rem;
+  border-radius: 15px;
 }
 
 form .form-input.form-input-squared {

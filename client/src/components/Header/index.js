@@ -20,8 +20,8 @@ const Header = () => {
         <div className="paw__navbar-links_logo">
           <img src={logo} />
         </div>
-        <h3 class="paw__title gradient__text">Paw Palz</h3>
-        <div class="paw__searchbar">
+        <h3 className="paw__title gradient__text">Paw Palz</h3>
+        <div className="paw__searchbar">
           <input type="text" placeholder="Start typing your search.." />
         </div>
         <div className="pawNav">
@@ -39,7 +39,10 @@ const Header = () => {
               <NavLink to="/account" className="paw__navbar-link-icons">
                 {AiOutlineUser}
               </NavLink>
-              <button className="btn btn-lg paw__logout-btn m-2" onClick={logout}>
+              <button
+                className="btn btn-lg paw__logout-btn m-2"
+                onClick={logout}
+              >
                 Logout
               </button>
             </>

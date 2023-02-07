@@ -64,7 +64,6 @@ export const QUERY_ME = gql`
         createdAt
       }
       friends {
-        userId
         username
         image
       }

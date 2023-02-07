@@ -39,7 +39,10 @@ const Header = () => {
               <NavLink to="/account" className="paw__navbar-link-icons">
                 {AiOutlineUser}
               </NavLink>
-              <button className="btn btn-lg paw__logout-btn m-2" onClick={logout}>
+              <button
+                className="btn btn-lg paw__logout-btn m-2"
+                onClick={logout}
+              >
                 Logout
               </button>
             </>

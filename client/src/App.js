@@ -49,7 +49,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/palz" element={<Palz />} />
               <Route path="/walks" element={<Walks />} />
-              <Route path="/account" element={<Account/>} />
+              <Route path="/account" element={<Account />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<Login />} />
             </Routes>

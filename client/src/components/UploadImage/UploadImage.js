@@ -117,9 +117,9 @@ export default function UploadImage() {
         {url && (
           <div>
             Access you file at{" "}
-            <a href={url} target="_blank" rel="noopener noreferrer">
+            {/* <a href={url} target="_blank" rel="noopener noreferrer">
               {url}
-            </a>
+            </a> */}
           </div>
         )}
       </div>

@@ -6,7 +6,4 @@ cloudinary.config({
     api_secret: "kQzkxHuJYFroQ-FFiwGQCa1FiM0", // add your api_secret
     secure: true
    });
-   
-   cloudinary.v2.search.expression(
-    'folder:xx/*' // add your folder
-    ).sort_by('public_id','desc').max_results(30).execute().then(result=>console.log(result));
+ module.exports = cloudinary

@@ -14,16 +14,13 @@ const server = new ApolloServer({
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+// Route
+app.use('/cloudinary', require('./routes/cloudinary'))
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
-app.get('/getimages', (req, res) => {
-  res.send(`<p>
-  https://api.cloudinary.com/v1_1/dzbxuwfvw
-  
-  </p>`)
-})
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });

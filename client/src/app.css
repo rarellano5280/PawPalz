@@ -198,7 +198,8 @@ a {
 
 .paw__login-btn,
 .paw__signup-btn,
-.paw__logout-btn {
+.paw__logout-btn,
+.paw__save-btn {
   background: var(--gradient-bar);
   color: #ffffff;
   font-family: var(--font-family);
@@ -213,3 +214,4 @@ a {
   cursor: pointer;
   min-width: 125px;
 }
+

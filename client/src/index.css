@@ -153,6 +153,8 @@ sup {
   top: -0.5em;
 }
 
+
+
 /* Embedded content
    ========================================================================== */
 /**
@@ -173,7 +175,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
+  font-family: var(--font-family);
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -192,6 +194,7 @@ input {
   /* 1 */
   overflow: visible;
 }
+
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
@@ -376,9 +379,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: var(--font-family);
   font-size: 16px;
   color: #1a1a1a;
 }
@@ -452,6 +453,35 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Font Weight  */
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+/* Border Radius  */
+.br-1 {
+  border-radius: 10px;
+}
+
+.br-2 {
+  border-radius: 20px;
+}
+
+.br-3 {
+  border-radius: 30px
+}
+
+.br-4 {
+  border-radius: 40px;
+}
+
+.br-5 {
+  border-radius: 50px;
+}
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
   width: 100%;
@@ -475,6 +505,10 @@ a:hover {
 
 .min-100-vw {
   min-width: 100vw;
+}
+
+.border-0 {
+  border: 0 !important;
 }
 
 /* MARGIN/PADDING UTILS */
@@ -1171,10 +1205,9 @@ form .form-input {
   width: 100%;
   padding: 0.75rem;
   color: #1a1a1a;
-  background-color: #ffffff;
+  background-color: aliceblue;
   margin: 0.625rem 0;
   font-size: 14px;
-  border: 1px solid #484848;
   border-radius: 15px;
 }
 

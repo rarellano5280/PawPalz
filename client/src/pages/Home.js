@@ -40,7 +40,7 @@ const Home = () => {
         </>
       ) : (
         <>
-          <div className="card card-rounded paw__landing-card section__paddin">
+          <div className="card card-rounded paw__landing-card section__padding">
             <div className="paw__landing-content">
               <h1
                 style={{ paddingBottom: 15, marginLeft: 50 }}

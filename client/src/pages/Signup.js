@@ -42,7 +42,7 @@ const Signup = () => {
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
+          <h2 className="text-center gradient__text p-2">Sign Up</h2>
           <div className="card-body">
             {data ? (
               <p>
@@ -52,7 +52,7 @@ const Signup = () => {
             ) : (
               <form onSubmit={handleFormSubmit}>
                 <input
-                  className="form-input"
+                  className="form-group"
                   placeholder="Your username"
                   name="username"
                   type="text"
@@ -60,7 +60,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <input
-                  className="form-input"
+                  className="form-group"
                   placeholder="Your email"
                   name="email"
                   type="email"
@@ -68,7 +68,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <input
-                  className="form-input"
+                  className="form-group"
                   placeholder="******"
                   name="password"
                   type="password"
@@ -76,7 +76,7 @@ const Signup = () => {
                   onChange={handleChange}
                 />
                 <button
-                  className="btn btn-block btn-primary"
+                  className="btn btn-block paw__style-btn"
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >

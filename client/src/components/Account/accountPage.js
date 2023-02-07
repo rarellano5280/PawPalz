@@ -60,7 +60,7 @@ const Account = () => {
             </div>
           </div>
         </div>
-        <button className="paw__save-btn">Save</button>
+        <button className="paw__style-btn">Save</button>
       </form>
     </div>
   );

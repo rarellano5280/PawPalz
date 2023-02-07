@@ -1,5 +1,6 @@
 var cloudinary = require("cloudinary").v2;
 require('dotenv').config();
+var User = require("./models/User")
 
 const cloud_name = process.env.Name;
 const api_key = process.env.API_key;
@@ -20,9 +21,9 @@ const opts = {
 const uploadImage = (image) => {
   //imgage = > base64
   return new Promise((resolve, reject) => {
-    cloudinary.uploader.upload(image, opts, (error, result) => {
+    cloudinary.uploader.upload(image, {tags: User.username }, (error, result) => {
       if (result && result.secure_url) {
-        console.log(result.secure_url);
+        console.log(result.secure_url, result.tags);
         return resolve(result.secure_url);
       }
       console.log(error.message);

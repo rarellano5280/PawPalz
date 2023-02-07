@@ -40,7 +40,7 @@ const Header = () => {
                 {AiOutlineUser}
               </NavLink>
               <button
-                className="btn btn-lg paw__logout-btn m-2"
+                className="btn btn-lg paw__style-btn m-2"
                 onClick={logout}
               >
                 Logout
@@ -48,10 +48,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="btn btn-lg paw__login-btn m-2" to="/login">
+              <Link className="btn btn-lg paw__style-btn m-2" to="/login">
                 Login
               </Link>
-              <Link className="btn btn-lg paw__signup-btn m-2" to="/signup">
+              <Link className="btn btn-lg paw__style-btn m-2" to="/signup">
                 Signup
               </Link>
             </>

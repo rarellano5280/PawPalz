@@ -82,7 +82,7 @@ const PostForm = () => {
         </div>
 
         <div className="col-12 col-lg-3">
-          <button className="paw__post-btn" type="submit">
+          <button className="paw__style-btn" type="submit">
             Add Post
           </button>
         </div>

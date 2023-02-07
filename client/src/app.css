@@ -196,11 +196,7 @@ a {
   border: none !important;
 }
 
-.paw__login-btn,
-.paw__signup-btn,
-.paw__logout-btn,
-.paw__save-btn,
-.paw__submit-btn {
+.paw__style-btn {
   background: var(--gradient-bar);
   color: #ffffff;
   font-family: var(--font-family);

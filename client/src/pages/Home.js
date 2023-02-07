@@ -69,7 +69,7 @@ const Home = () => {
               <PostForm />
               <UploadImage />
             </div>
-            <div className="card card-rounded paw__upload section__padding col-12 col-md-10 mb-3 p-3"></div>
+            {/* <div className="card card-rounded paw__upload section__padding col-12 col-md-10 mb-3 p-3"></div> */}
             <div className="col-12 col-md-8 mb-3">
               {loading ? (
                 <div>Loading...</div>

@@ -24,12 +24,21 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />  
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Paw Palz</title>
-    <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript">  
-    </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <script
+      src="https://upload-widget.cloudinary.com/global/all.js"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -45,4 +54,21 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    mapboxgl.accessToken =
+      'pk.eyJ1IjoiYW50b25pb2R1cmFuanIiLCJhIjoiY2xkdGR6N280MDV1ZDNubDh4ZHY5anhsbSJ9.M9e_MnBRToSJ4SQ4PkWqaA';
+
+    const map = new mapboxgl.Map({
+      container: 'map',
+
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [-104.9, 39.7],
+      zoom: 9,
+    });
+
+    const geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      mapboxgl: mapboxgl,
+    });
+  </script>
 </html>

@@ -6,6 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    image: String
     posts: [Post]!
     friends: [User]!
   }
@@ -28,6 +29,7 @@ const typeDefs = gql`
   input InputFriend {
     userId: String
     username: String
+    image: String
   }
 
   type Auth {

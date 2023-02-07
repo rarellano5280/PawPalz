@@ -1,50 +1,88 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import ThoughtList from '../components/ThoughtList';
-import ThoughtForm from '../components/ThoughtForm';
+import auth from '../utils/auth';
+import PostList from '../components/PostList';
+import PostForm from '../components/PostForm';
 import UploadImage from '../components/UploadImage/UploadImage';
-import ImageDisplay from '../components/ImageDisplay/ImageDisplay';
-import UploadWidget from '../components/UploadImage/UploadWidget';
 
-import { QUERY_THOUGHTS } from '../utils/queries';
+import { QUERY_POSTS } from '../utils/queries';
+
+import profilePic from '../assets/profile-pic.jpeg';
+import { ImLocation } from 'react-icons/im';
+import { AiFillHeart } from 'react-icons/ai';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
-  const thoughts = data?.thoughts || [];
+  const { loading, data } = useQuery(QUERY_POSTS);
+  const posts = data?.posts || [];
 
   return (
     <main>
-      <div className="flex-row justify-center">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
-        >
-          <ThoughtForm />
-        </div>
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
-        >
-          <UploadWidget />
-        </div>
-        <div className="col-12 col-md-8 mb-3">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
-        >
-          <ImageDisplay />
-        </div>
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <ThoughtList
-              thoughts={thoughts}
-              title="Some Feed for Thought(s)..."
-            />
-          )}
-        </div>
-      </div>
+      {auth.loggedIn() ? (
+        <>
+          <div
+            className="card card-rounded paw__header section__padding"
+            id="home"
+          >
+            <div className="paw__header-content">
+              <h1
+                style={{ paddingBottom: 15, marginLeft: 50 }}
+                className=" gradient__text"
+              >
+                Welcome back!{' '}
+              </h1>
+              <h1
+                style={{ paddingBottom: 15, marginLeft: 100 }}
+                className="gradient__text"
+              >
+                Name
+              </h1>
+              <div style={{ padding: 50, textAlign: 'left' }}></div>
+            </div>
+            <div className="paw__header-image">
+              <img src={profilePic} alt="avatar" />
+              <p style={{ paddingTop: 10 }} className="paw__bio">
+                @Username
+              </p>
+              <h4 style={{ paddingTop: 5 }} className="paw__bio">
+                About
+              </h4>
+              <p
+                style={{ paddingTop: 1, marginLeft: 50, marginRight: 50 }}
+                className="paw__bio"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut
+                varius metus, vitae efficitur nibh
+              </p>
+              <p>
+                <ImLocation size={20} />
+                Denver, Colorado
+              </p>
+              <p>
+                <AiFillHeart /> Single
+              </p>
+            </div>
+          </div>
+          <div className="flex-row justify-center">
+            <div className="card card-rounded paw__post section__paddingcol-12 col-md-10 mb-3 p-3">
+              <PostForm />
+              <UploadImage />
+            </div>
+            <div className="card card-rounded paw__upload section__padding col-12 col-md-10 mb-3 p-3"></div>
+            <div className="col-12 col-md-8 mb-3">
+              {loading ? (
+                <div>Loading...</div>
+              ) : (
+                <PostList posts={posts} title="What are your Palz saying..." />
+              )}
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <h3>Please login or signup to access your PawPalz!</h3>
+        </>
+      )}
     </main>
   );
 };

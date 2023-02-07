@@ -1,25 +1,26 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 
-import { ADD_THOUGHT } from '../../utils/mutations';
-import { QUERY_THOUGHTS } from '../../utils/queries';
+import { ADD_POST } from '../../utils/mutations';
+import { QUERY_POSTS } from '../../utils/queries';
+import './post.css'
 
-const ThoughtForm = () => {
+const PostForm = () => {
   const [formState, setFormState] = useState({
-    thoughtText: '',
-    thoughtAuthor: '',
+    postText: '',
+    postAuthor: '',
   });
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation(ADD_THOUGHT, {
+  const [addPost, { error }] = useMutation(ADD_POST, {
     // All returning data from Apollo Client queries/mutations return in a `data` field, followed by the the data returned by the request
-    update(cache, { data: { addThought } }) {
+    update(cache, { data: { addPost } }) {
       try {
-        const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
+        const { posts } = cache.readQuery({ query: QUERY_POSTS });
 
         cache.writeQuery({
-          query: QUERY_THOUGHTS,
-          data: { thoughts: [addThought, ...thoughts] },
+          query: QUERY_POSTS,
+          data: { posts: [addPost, ...posts] },
         });
       } catch (e) {
         console.error(e);
@@ -31,13 +32,13 @@ const ThoughtForm = () => {
     event.preventDefault();
 
     try {
-      const { data } = await addThought({
+      const { data } = await addPost({
         variables: { ...formState },
       });
 
       setFormState({
-        thoughtText: '',
-        thoughtAuthor: '',
+        postText: '',
+        postAuthor: '',
       });
     } catch (err) {
       console.error(err);
@@ -47,20 +48,20 @@ const ThoughtForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'thoughtText' && value.length <= 280) {
+    if (name === 'postText' && value.length <= 280) {
       setFormState({ ...formState, [name]: value });
       setCharacterCount(value.length);
-    } else if (name !== 'thoughtText') {
+    } else if (name !== 'postText') {
       setFormState({ ...formState, [name]: value });
     }
   };
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3 className='gradient__text pl-4'>Create a Post</h3>
 
       <p
-        className={`m-0 ${
+        className={`m-3 ${
           characterCount === 280 || error ? 'text-danger' : ''
         }`}
       >
@@ -68,32 +69,32 @@ const ThoughtForm = () => {
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
       <form
-        className="flex-row justify-center justify-space-between-md align-center"
+        className="flex-row justify-center justify-space-between-md align-center border"
         onSubmit={handleFormSubmit}
       >
         <div className="col-12">
           <textarea
-            name="thoughtText"
-            placeholder="Here's a new thought..."
-            value={formState.thoughtText}
-            className="form-input w-100"
+            name="postText"
+            placeholder="What's on your mind?"
+            value={formState.postText}
+            className="form-input text-left"
             style={{ lineHeight: '1.5' }}
             onChange={handleChange}
           ></textarea>
         </div>
         <div className="col-12 col-lg-9">
           <input
-            name="thoughtAuthor"
-            placeholder="Add your name to get credit for the thought..."
-            value={formState.thoughtAuthor}
+            name="postAuthor"
+            placeholder="Add your name to get credit for the post..."
+            value={formState.postAuthor}
             className="form-input w-100"
             onChange={handleChange}
           />
         </div>
 
         <div className="col-12 col-lg-3">
-          <button className="btn btn-primary btn-block py-3" type="submit">
-            Add Thought
+          <button className="paw__post-btn" type="submit">
+            Add Post
           </button>
         </div>
         {error && (
@@ -106,4 +107,4 @@ const ThoughtForm = () => {
   );
 };
 
-export default ThoughtForm;
+export default PostForm;

@@ -50,7 +50,7 @@ const resolvers = {
     },
     addPost: async (parent, { postText }, context) => {
       if (context.user) {
-        const post = Post.create({
+        const post = await Post.create({
           postText,
           postAuthor: context.user.username,
         });

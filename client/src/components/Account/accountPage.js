@@ -57,6 +57,7 @@ const Account = () => {
             </div>
           </div>
         </div>
+        <button className="paw__save-btn">Save</button>
       </form>
     </div>
   );

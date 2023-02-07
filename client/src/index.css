@@ -453,13 +453,34 @@ a:hover {
   text-decoration: underline;
 }
 
-
+/* Font Weight  */
 .fw-400 {
   font-weight: 400;
 }
 
 .fw-600 {
   font-weight: 600;
+}
+
+/* Border Radius  */
+.br-1 {
+  border-radius: 10px;
+}
+
+.br-2 {
+  border-radius: 20px;
+}
+
+.br-3 {
+  border-radius: 30px
+}
+
+.br-4 {
+  border-radius: 40px;
+}
+
+.br-5 {
+  border-radius: 50px;
 }
 /* HEIGHT / WIDTH UTILS */
 .w-100 {

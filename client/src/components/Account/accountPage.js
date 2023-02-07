@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_ME } from "../../utils/queries";
+import profilePic from '../../assets/profile-pic.jpeg';
 
 const Account = () => {
   const { loading, data } = useQuery(QUERY_ME);
@@ -13,7 +14,9 @@ const Account = () => {
       <div className="card-body p-5 w-100 border-0">
         <div className="row justify-center">
           <div className="col-lg-4 text-center">
-            <figure className=""></figure>
+            <figure className="ml-auto mr-auto mb-0 mt-0 w-100">
+              <img className="br-2"src={profilePic}></img>
+            </figure>
             <h2 className="paw__account-username gradient__text">
               {me.username}
             </h2>

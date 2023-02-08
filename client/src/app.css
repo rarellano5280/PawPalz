@@ -220,7 +220,11 @@ a {
 }
 
 @media screen and (max-width: 1050px) {
-  .paw__landing-card {
+  .paw__landing-card,
+  .paw__post,
+  .paw__upload,
+  .paw__header
+   {
     flex-direction: column;
   }
 }
@@ -241,6 +245,10 @@ a {
   }
   .paw__landing-content {
     margin-right: 0;
+  }
+  
+  .container {
+    width: 500px;
   }
 
 }

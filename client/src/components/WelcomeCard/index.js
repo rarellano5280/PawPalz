@@ -38,8 +38,7 @@ const WelcomeCard = () => {
           style={{ paddingTop: 1, marginLeft: 50, marginRight: 50 }}
           className="paw__bio"
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut varius
-          metus, vitae efficitur nibh
+          Hi! I'm Aspen, and I'm here to steal your hearts with my fluffy fur, big bark, and even bigger personality. I was born to guard the flocks, but I prefer to guard the couch and make sure nobody sits in "my spot".
         </p>
         <p>
           <ImLocation size={20} />

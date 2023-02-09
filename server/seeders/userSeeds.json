@@ -58,5 +58,11 @@
     "email": "lernantino@dogfriends.dev",
     "password": "password10",
     "image": "../../client/src/assets/pawDefault.png"
+  },
+  {
+    "username": "Aspen the Great Pyrenees",
+    "email": "gernantino@dogfriends.dev",
+    "password": "password11",
+    "image": "../../client/src/assets/pawDefault.png"
   }
 ]

@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import auth from '../utils/auth';
 import PostList from '../components/PostList';
 import PostForm from '../components/PostForm';
-import UploadImage from '../components/UploadImage/UploadImage';
+import UploadImage from '../components/UploadImage/UploadWidget';
 
 import { QUERY_POSTS } from '../utils/queries';
 

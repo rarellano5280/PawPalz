@@ -4,7 +4,7 @@ import { QUERY_ME } from "../../utils/queries";
 import profilePic from '../../assets/profile-pic.jpeg';
 
 const Account = () => {
-  const { loading, data } = useQuery(QUERY_ME);
+  const { data } = useQuery(QUERY_ME);
   const me = data?.me || [];
   return (
     <div className=" card card-rounded p-0 mb-4">
@@ -15,7 +15,7 @@ const Account = () => {
         <div className="row justify-center">
           <div className="col-lg-4 text-center">
             <figure className="ml-auto mr-auto mb-0 mt-0 w-100">
-              <img className="br-2"src={profilePic}></img>
+              <img className="br-2"src={profilePic} alt="profile"></img>
             </figure>
             <h2 className="paw__account-username gradient__text">
               {me.username}

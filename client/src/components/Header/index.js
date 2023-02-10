@@ -18,7 +18,7 @@ const Header = () => {
     <div className="paw__navbar">
       <div className="paw__navbar-links">
         <div className="paw__navbar-links_logo">
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </div>
         <h3 className="paw__title gradient__text">Paw Palz</h3>
         <div className="paw__searchbar">
